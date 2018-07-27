@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700|Roboto:300,300i,400,400i,500,500i');
+
+// Body Styles
+
+$body-bg: #181818;
+$body-color: #fff;
+
+// Fonts
+
+// stylelint-disable value-keyword-case
+$font-family-serif:           'Rasa', serif;
+$font-family-sans-serif:      'Roboto', sans-serif;
+
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 700;
