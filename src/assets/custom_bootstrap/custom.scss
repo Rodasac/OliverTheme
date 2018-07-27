@@ -1,2 +1,84 @@
 @import "variables";
 @import "~node_modules/bootstrap/scss/bootstrap";
+
+.oliver-divider {
+  background-color: $body-color;
+  height: 1px;
+  position: relative;
+  width: 100%;
+
+  &.margin-left {
+    transform: translateX(-30px);
+  }
+
+  &.vertical {
+    position: absolute;
+  }
+}
+
+.oliver-btn, .navbar-nav li {
+  span {
+    display: block;
+    position: relative;
+    z-index: 11;
+    transform: translateX(-100%);
+    transition: all 1s ease;
+  }
+
+  &.active span, &:hover span {
+    background: $bg-color-nav-links-oliver;
+    transform: translateX(0);
+  }
+
+  a {
+    color: $body-color;
+    position: relative;
+    transition: all 0.5s ease;
+    z-index: 12;
+  }
+
+  &:hover a {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+.navbar-nav li {
+  span {
+    height: 70%;
+    width: 50%;
+  }
+
+  a {
+    margin-right: 1.5em;
+    padding-right: 1em;
+    right: -30%;
+    top: -50%;
+  }
+}
+
+.oliver-btn {
+  max-width: 150px;
+  span {
+    height: 20px;
+    width: 80%;
+  }
+
+  a {
+    font-family: 'Rasa', serif;
+    font-size: 1.15em;
+    font-weight: 500;
+    margin-right: 1.5em;
+    padding-right: 1em;
+    position: absolute;
+    right: -40%;
+    top: 60%;
+
+    &:hover {
+      color: $gray-100;
+    }
+  }
+}

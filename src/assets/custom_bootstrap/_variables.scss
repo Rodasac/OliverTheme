@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700|OpenSans:300,300i,400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700|OpenSans:300,300i,400,400i,600,600i,700,700i');
 
 // Body Styles
 
 $body-bg: #181818;
 $body-color: #fff;
+
+$primary: #5329F5;
 
 // Fonts
 
@@ -14,6 +16,11 @@ $font-family-sans-serif:      'Open Sans', sans-serif;
 $headings-font-family: $font-family-serif;
 $headings-font-weight: 700;
 
+$link-color: $body-color;
+$link-decoration: none;
+$link-hover-color: $primary;
+$link-hover-decoration: none;
+
 // Personalizados
 
-$bg-color-links-oliver: #5329F5;
+$bg-color-nav-links-oliver: #5329F5;
