@@ -1,6 +1,49 @@
+@import "~src/assets/custom_bootstrap/variables";
 .navbar {
+  font-weight: 600;
   max-height: 100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
   .navbar-brand .logotype {
     max-height: 70px;
+  }
+
+  .navbar-nav li {
+    span {
+      display: block;
+      position: relative;
+      height: 70%;
+      width: 50%;
+      z-index: 11;
+      transform: translateX(-100%);
+      transition: all 1s ease;
+    }
+
+    &.active span, &:hover span {
+      background: $bg-color-links-oliver;
+      transform: translateX(0);
+    }
+
+    a {
+      color: $body-color;
+      margin-right: 1.5em;
+      padding-right: 1em;
+      position: relative;
+      right: -30%;
+      transition: all 0.5s ease;
+      top: -50%;
+      z-index: 12;
+    }
+
+    &:hover a {
+      -webkit-transform: translateX(10px);
+      -moz-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+      -o-transform: translateX(10px);
+      transform: translateX(10px);
+    }
   }
 }

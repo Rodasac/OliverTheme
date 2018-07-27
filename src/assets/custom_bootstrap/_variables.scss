@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700|Roboto:300,300i,400,400i,500,500i');
+@import url('https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700|OpenSans:300,300i,400,400i,600,600i');
 
 // Body Styles
 
@@ -9,7 +9,11 @@ $body-color: #fff;
 
 // stylelint-disable value-keyword-case
 $font-family-serif:           'Rasa', serif;
-$font-family-sans-serif:      'Roboto', sans-serif;
+$font-family-sans-serif:      'Open Sans', sans-serif;
 
 $headings-font-family: $font-family-serif;
 $headings-font-weight: 700;
+
+// Personalizados
+
+$bg-color-links-oliver: #5329F5;
