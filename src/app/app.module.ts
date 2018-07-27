@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
 import {routes} from './app.routing';
+import { HeaderComponent } from './home-page/header/header.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {routes} from './app.routing';
     AboutPageComponent,
     ContactPageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
