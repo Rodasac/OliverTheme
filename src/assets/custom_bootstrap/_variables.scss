@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700|OpenSans:300,300i,400,400i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 // Body Styles
 
@@ -10,12 +10,13 @@ $primary: #5328fe;
 // Fonts
 
 // stylelint-disable value-keyword-case
-$font-family-serif:           'Rasa', serif;
-$font-family-sans-serif:      'Open Sans', sans-serif;
+$font-family-serif:           'Merriweather', serif;
+$font-family-sans-serif:      'Poppins', sans-serif;
 
 $headings-font-family: $font-family-serif;
 $headings-font-weight: 700;
 $headings-font-size: 4em;
+$hsectons-font-size: 3.5em;
 
 $link-color: $body-color;
 $link-decoration: none;
@@ -25,6 +26,7 @@ $link-hover-decoration: none;
 // Personalizados
 
 $padding-left-headings: 20vw;
+$padding-left-sections: 17vw;
 
 $bg-color-nav-links-oliver: $primary;
 

@@ -1,0 +1,79 @@
+<div class="work-head">
+	<div class="row">
+		<div class="col-12">
+			<h1>My Works.</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-1">
+			<span class="oliver-divider"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<p class="small">
+				A photo — is a search for what can get into the frame. When you limit events to a frame — You change these events.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="work-grid">
+  <div class="row">
+    <div class="col-12">
+      <div class="grid">
+        <div *ngFor="let work of works">
+          <img src="{{work.img}}">
+          <div (mouseenter)="hoverDetail($event)" (mouseleave)="hoverDetail($event)" class="details">
+            <div class="info">
+              <h4>
+                MAKE
+              </h4>
+              <span>{{work.make}}</span>
+            </div>
+            <div class="info">
+              <h4>
+                Model
+              </h4>
+              <span>{{work.model}}</span>
+            </div>
+            <div class="info">
+              <h4>
+                SHUTTER SPEED
+              </h4>
+              <span>{{work.shutter}}</span>
+            </div>
+            <div class="info">
+              <h4>
+                APERTURE
+              </h4>
+              <span>{{work.aperture}}</span>
+            </div>
+            <div class="info">
+              <h4>
+                FOCAL LENGHT
+              </h4>
+              <span>{{work.focal}}</span>
+            </div>
+            <div class="info">
+              <h4>
+                ISO
+              </h4>
+              <span>{{work.iso}}</span>
+            </div>
+            <div class="icon">
+              <fa-icon [icon]="infoIcon"></fa-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-end">
+  <div class="col-md-2">
+    <span class="oliver-divider margin-left middle"></span>
+    <a routerLink="/" class="btn btn-link explore-utility ml-4">EXPLORE GALLERY.</a>
+  </div>
+</div>

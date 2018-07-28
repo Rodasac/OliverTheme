@@ -1,0 +1,141 @@
+@import '~src/assets/custom_bootstrap/variables';
+
+.work-head {
+  max-width: 100vw;
+  overflow: hidden;
+  padding-bottom: 10vh;
+  padding-left: $padding-left-sections;
+  padding-top: 20vh;
+
+  &::before {
+    color: $text-color-dark;
+    content: '03.';
+    font-size: 15em;
+    font-weight: 700;
+    left: 7vw;
+    position: absolute;
+    right: auto;
+    z-index: -1;
+  }
+
+  h1 {
+    font-size: $hsectons-font-size;
+    padding-left: 1em;
+  }
+
+  .small {
+    padding-left: 4.5em;
+    padding-top: 3em;
+  }
+}
+
+.work-grid {
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+
+  .grid {
+    display: inline-block;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    & > div {
+      display: inline-block;
+      height: auto;
+      opacity: .9;
+      overflow: hidden;
+      position: absolute;
+      width: 25%;
+
+      &:nth-of-type(2) {
+        height: 100%;
+        left: 25%;
+      }
+
+      &:nth-of-type(3) {
+        height: 50%;
+        left: 50%;
+        width: 50%;
+      }
+
+      &:nth-of-type(4) {
+        top: 50%;
+      }
+
+      &:nth-of-type(5) {
+        left: 50%;
+        top: 50%;
+      }
+
+      &:nth-of-type(6) {
+        left: 75%;
+        top: 50%;
+      }
+
+      img {
+        font-family: 'object-fit: cover';
+        height: 100%;
+        object-fit: cover;
+        transform: scale3d(1, 1, 1);
+        transition: transform .5s ease;
+        width: 100%;
+        z-index: 1;
+
+        &.hover {
+          transform: scale(1.2, 1.2);
+          z-index: 1;
+        }
+      }
+
+      img ~ .details {
+        background: rgba($text-color-dark, 30);
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        padding: 2.5em 3em;
+        position: absolute;
+        top: 0;
+        transition: opacity .5s ease;
+        width: 100%;
+        z-index: 2;
+
+        &:hover {
+          opacity: .7;
+        }
+
+        & > .info {
+          padding-bottom: .8em;
+          width: 100%;
+        }
+
+        & > .info h4 {
+          font-family: $font-family-sans-serif;
+          font-size: .8em;
+          margin-bottom: .3em;
+          padding: 0;
+        }
+
+        & > .info span {
+          font-size: .9em;
+          padding-bottom: .8em;
+          padding-top: .3em;
+        }
+
+        .icon {
+          bottom: 8%;
+          color: $body-color;
+          position: absolute;
+          right: 0;
+          z-index: 3;
+
+          .ng-fa-icon {
+            padding: 3em;
+          }
+        }
+      }
+    }
+  }
+}

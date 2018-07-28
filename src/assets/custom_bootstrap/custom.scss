@@ -3,12 +3,18 @@
 
 .oliver-divider {
   background-color: $body-color;
+  display: block;
   height: 1px;
   position: relative;
   width: 100%;
 
   &.margin-left {
     transform: translateX(-30px);
+  }
+
+  &.middle {
+    max-width: 50px;
+    top: 50%;
   }
 
   &.vertical {
@@ -20,9 +26,9 @@
   span {
     display: block;
     position: relative;
-    z-index: 11;
     transform: translateX(-100%);
     transition: all 1s ease;
+    z-index: 11;
   }
 
   &.active span, &:hover span {
@@ -33,15 +39,11 @@
   a {
     color: $body-color;
     position: relative;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
     z-index: 12;
   }
 
   &:hover a {
-    -webkit-transform: translateX(10px);
-    -moz-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-    -o-transform: translateX(10px);
     transform: translateX(10px);
   }
 }
@@ -62,6 +64,7 @@
 
 .oliver-btn {
   max-width: 150px;
+
   span {
     height: 20px;
     width: 80%;
@@ -70,7 +73,7 @@
   a {
     font-family: $font-family-serif;
     font-size: 1.15em;
-    font-weight: 500;
+    font-weight: 700;
     margin-right: 1.5em;
     padding-right: 1em;
     position: absolute;
@@ -97,4 +100,10 @@
     width: 100%;
     z-index: -1;
   }
+}
+
+.explore-utility {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }

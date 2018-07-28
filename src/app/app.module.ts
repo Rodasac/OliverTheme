@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 import { NgModule } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -12,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import {routes} from './app.routing';
 import { HeaderComponent } from './home-page/header/header.component';
 import { AboutSectionComponent } from './home-page/about-section/about-section.component';
+import { WorkSectionComponent } from './home-page/work-section/work-section.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { AboutSectionComponent } from './home-page/about-section/about-section.c
     NavbarComponent,
     FooterComponent,
     HeaderComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    WorkSectionComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
