@@ -1,20 +1,20 @@
-@import "~src/assets/custom_bootstrap/variables";
+@import '~src/assets/custom_bootstrap/variables';
+
 header {
   background: url("../../../assets/img/header-back.jpg") no-repeat center;
-  -webkit-background-size: cover;
   background-size: cover;
   filter: opacity(50);
   max-width: 100vw;
+  min-height: 100vh;
   overflow: hidden;
   padding-top: 30vh;
-  height: 100vh;
 
   .social > ul {
-    font-family: 'Rasa', serif;
-    font-weight: 500;
-    position: absolute;
-    left: -7vw;
     bottom: 40vh;
+    font-family: $font-family-serif;
+    font-weight: 500;
+    left: -7vw;
+    position: absolute;
     transform: rotatez(-90deg);
     li {
       display: inline-block;
@@ -28,26 +28,30 @@ header {
   }
 
   .intro {
-    padding-left: 20vw;
+
+    padding-bottom: 2em;
+    padding-left: $padding-left-headings;
 
     .head {
       padding-left: 1em;
     }
 
     .text-intro {
-      letter-spacing: 3px;
-      font-weight: 500;
       font-size: 0.9em;
+      font-weight: 500;
+      letter-spacing: 3px;
       padding-bottom: 1em;
     }
 
     h1 {
-      font-size: 4em;
-      text-shadow: 0 0 10px $body-bg;
+      font-size: $headings-font-size;
       padding-bottom: 0.5em;
+      text-shadow: 0 0 10px $body-bg;
     }
 
-    .intro-body, .btn-header, .btn-back-header {
+    .btn-back-header,
+    .btn-header,
+    .intro-body {
       padding-left: 2rem;
     }
 
@@ -61,16 +65,16 @@ header {
   }
 
   .explore {
+    bottom: 40vh;
     display: block;
     position: absolute;
     right: -1vw;
-    bottom: 40vh;
     transform: rotateZ(-90deg);
 
     li {
-      font-size: 0.7em;
-      font-weight: 700;
       display: inline-block;
+      font-size: .7em;
+      font-weight: 700;
       list-style: none;
 
       &:first-of-type {
@@ -82,13 +86,13 @@ header {
       }
 
       &:last-of-type {
+        bottom: -.25vw;
         letter-spacing: 2px;
-        bottom: -0.25vw;
         padding-left: 1em;
         position: relative;
-        
+
         a:hover {
-          color: #ddd;
+          color: darker($body-color, .5);
         }
       }
     }

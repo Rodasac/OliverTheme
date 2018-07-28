@@ -68,7 +68,7 @@
   }
 
   a {
-    font-family: 'Rasa', serif;
+    font-family: $font-family-serif;
     font-size: 1.15em;
     font-weight: 500;
     margin-right: 1.5em;
@@ -80,5 +80,21 @@
     &:hover {
       color: $gray-100;
     }
+  }
+}
+
+.heading-title {
+  display: inline-block;
+  font-size: 3.5em;
+
+  &::after {
+    background: $primary;
+    bottom: 10%;
+    content: '';
+    height: 40%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
   }
 }
