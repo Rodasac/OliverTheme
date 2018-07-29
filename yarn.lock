@@ -3560,7 +3560,7 @@ jasminewd2@^2.1.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/jasminewd2/-/jasminewd2-2.2.0.tgz#e37cf0b17f199cce23bea71b2039395246b4ec4e"
 
-jquery@>=1.5, jquery@>=1.8.3, jquery@^3.3.1:
+"jquery@>= 2.2.0", jquery@>=1.5, jquery@>=1.8.3, jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
@@ -4265,6 +4265,13 @@ next-tick@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
 
+ngx-owl-carousel@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/ngx-owl-carousel/-/ngx-owl-carousel-2.0.7.tgz#1a8854a64026c785dd0e6721a6a2fd64b17e254a"
+  dependencies:
+    jquery ">= 2.2.0"
+    owl.carousel "^2.2.0"
+
 no-case@^2.2.0:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
@@ -4616,7 +4623,7 @@ osenv@0, osenv@^0.1.4, osenv@^0.1.5:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-owl.carousel@^2.3.4:
+owl.carousel@^2.2.0, owl.carousel@^2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/owl.carousel/-/owl.carousel-2.3.4.tgz#6c53dc8d24304b790e4f27a1dc4a655e973ccdc9"
   dependencies:

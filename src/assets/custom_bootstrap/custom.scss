@@ -88,7 +88,9 @@
 
 .heading-title {
   display: inline-block;
+  letter-spacing: 4px;
   font-size: 3.5em;
+  font-weight: 800;
 
   &::after {
     background: $primary;

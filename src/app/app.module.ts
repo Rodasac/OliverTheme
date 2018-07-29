@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { OwlModule } from 'ngx-owl-carousel';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -15,6 +16,7 @@ import { HeaderComponent } from './home-page/header/header.component';
 import { AboutSectionComponent } from './home-page/about-section/about-section.component';
 import { WorkSectionComponent } from './home-page/work-section/work-section.component';
 import { CountersComponent } from './home-page/counters/counters.component';
+import { TestimonialsComponent } from './home-page/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { CountersComponent } from './home-page/counters/counters.component';
     HeaderComponent,
     AboutSectionComponent,
     WorkSectionComponent,
-    CountersComponent
+    CountersComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    FontAwesomeModule
+    FontAwesomeModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]
