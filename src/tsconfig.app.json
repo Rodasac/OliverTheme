@@ -3,7 +3,12 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "module": "es2015",
-    "types": []
+    "types": [
+      "node",
+      "jquery",
+      "waypoints",
+      "jquery-countto"
+    ]
   },
   "exclude": [
     "src/test.ts",

@@ -5,10 +5,14 @@
     "module": "commonjs",
     "types": [
       "jasmine",
-      "node"
+      "node",
+      "jquery",
+      "waypoints",
+      "jquery-countto"
     ]
   },
   "files": [
+    "typings.d.ts",
     "test.ts",
     "polyfills.ts"
   ],

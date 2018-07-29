@@ -14,6 +14,7 @@ import {routes} from './app.routing';
 import { HeaderComponent } from './home-page/header/header.component';
 import { AboutSectionComponent } from './home-page/about-section/about-section.component';
 import { WorkSectionComponent } from './home-page/work-section/work-section.component';
+import { CountersComponent } from './home-page/counters/counters.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { WorkSectionComponent } from './home-page/work-section/work-section.comp
     FooterComponent,
     HeaderComponent,
     AboutSectionComponent,
-    WorkSectionComponent
+    WorkSectionComponent,
+    CountersComponent
   ],
   imports: [
     BrowserModule,

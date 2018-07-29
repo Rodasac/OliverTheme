@@ -1,0 +1,15 @@
+.counters {
+  padding-bottom: 3em;
+
+  .counter {
+    font-size: 3em;
+    margin-bottom: 0;
+    padding-left: .2em;
+    position: relative;
+  }
+
+  .small {
+    font-weight: 600;
+    padding-left: 1em;
+  }
+}
