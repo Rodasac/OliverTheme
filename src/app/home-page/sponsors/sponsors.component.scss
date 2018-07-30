@@ -11,6 +11,13 @@
   h1 {
     font-size: 3em;
     font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: $headings-font-size-md;
+    }
+    @media (max-width: 576px) {
+      font-size: $headings-font-size-sm;
+    }
   }
 
   .form-control {
@@ -35,6 +42,10 @@
       &::placeholder {
         color: $body-color;
         opacity: 1;
+
+        @media (max-width: 768px) {
+          font-size: .7em;
+        }
       }
     }
   }

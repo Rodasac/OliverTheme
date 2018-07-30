@@ -10,7 +10,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-4">
+		<div class="col-10 col-lg-4">
 			<p class="small">
 				A photo — is a search for what can get into the frame. When you limit events to a frame — You change these events.
 			</p>
@@ -24,7 +24,7 @@
       <div class="grid">
         <div *ngFor="let work of works">
           <img src="{{work.img}}">
-          <div (mouseenter)="hoverDetail($event)" (mouseleave)="hoverDetail($event)" class="details">
+          <div (touchstart)="hoverDetail($event)" (mouseenter)="hoverDetail($event)" (touchend)="hoverDetail($event)" (mouseleave)="hoverDetail($event)" class="details">
             <div class="info">
               <h4>
                 MAKE
@@ -72,7 +72,7 @@
 </div>
 
 <div class="row justify-content-end explore-work">
-  <div class="col-md-2">
+  <div class="col-6 col-lg-2">
     <span class="oliver-divider margin-left middle"></span>
     <a routerLink="/" class="btn btn-link explore-utility ml-4">EXPLORE GALLERY.</a>
   </div>

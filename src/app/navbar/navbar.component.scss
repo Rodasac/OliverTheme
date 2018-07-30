@@ -1,49 +1,54 @@
 @import "~src/assets/custom_bootstrap/variables";
+
+$nav-icon-color: rgba($body-color, .9);
+
+$navbar-dark-toggler-icon-bg:       url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC7SURBVGhD7djdCcJAEEXhaAWxFRvSYqwhYCu2YBGKhex6B+7rEJ+ScTkfzNssHMmPkAkAAIys937UXFtri+ZebJZoi0bn5rR802Jp0ejcnJae3i8rGp2bG+aKaO+gKfuMaC7R6FwAQFF6V8+aU7GZnbdOfzhnzUeHSlLbOxqdm9PSw2fKikbn5kb6IXFrvXymnGiLRueu05n/ftgBALvQu5oPdFuJRufmtMQHuq38dEW0xwc6AACwq2n6AiwYumzclQgXAAAAAElFTkSuQmCC');
+$navbar-dark-toggler-border-color:  rgba($body-color, .7);
+
 .navbar {
   font-weight: 600;
   max-height: 100px;
   position: absolute;
   top: 0;
+  transition: all .7s ease;
   width: 100%;
   z-index: 10;
 
-  .navbar-brand .logotype {
+  @media (max-width: 576px) {
+    max-height: auto;
+  }
+
+  .navbar-brand {
+    @media (max-width: 576px) {
+      width: 50%;
+    }
+  }
+
+  .navbar-brand > .logotype {
     max-height: 70px;
   }
 
-  //.navbar-nav li {
-  //  span {
-  //    display: block;
-  //    position: relative;
-  //    height: 70%;
-  //    width: 50%;
-  //    z-index: 11;
-  //    transform: translateX(-100%);
-  //    transition: all 1s ease;
-  //  }
-  //
-  //  &.active span, &:hover span {
-  //    background: $bg-color-nav-links-oliver;
-  //    transform: translateX(0);
-  //  }
-  //
-  //  a {
-  //    color: $body-color;
-  //    margin-right: 1.5em;
-  //    padding-right: 1em;
-  //    position: relative;
-  //    right: -30%;
-  //    transition: all 0.5s ease;
-  //    top: -50%;
-  //    z-index: 12;
-  //  }
-  //
-  //  &:hover a {
-  //    -webkit-transform: translateX(10px);
-  //    -moz-transform: translateX(10px);
-  //    -ms-transform: translateX(10px);
-  //    -o-transform: translateX(10px);
-  //    transform: translateX(10px);
-  //  }
-  //}
+  .navbar-toggler {
+    background-image: $navbar-dark-toggler-icon-bg;
+    background-position: 100% 100%;
+    background-size: cover;
+    border: 1px solid $navbar-dark-toggler-border-color;
+    color: $body-color;
+  }
+
+  .navbar-collapse {
+    @media (max-width: 768px) {
+      background-color: $body-bg;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+
+    @media (max-width: 576px) {
+      li > a {
+        left: auto;
+        right: auto;
+      }
+    }
+  }
 }

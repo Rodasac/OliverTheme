@@ -16,11 +16,36 @@
     position: absolute;
     right: auto;
     z-index: -1;
+
+    @media (max-width: 768px) {
+      font-size: 10em;
+    }
+    @media (max-width: 576px) {
+      font-size: 6em;
+    }
+  }
+
+  @media (max-width: 768px) {
+    span {
+      width: 50px;
+    }
+  }
+  @media (max-width: 576px) {
+    span {
+      width: 30px;
+    }
   }
 
   h1 {
     font-size: $hsectons-font-size;
     padding-left: 1em;
+
+    @media (max-width: 768px) {
+      font-size: $headings-font-size-md;
+    }
+    @media (max-width: 576px) {
+      font-size: $headings-font-size-sm;
+    }
   }
 
   .small {
@@ -42,6 +67,10 @@
     position: relative;
     width: 100%;
 
+    @media (max-width: 767px) {
+      overflow: visible;
+    }
+
     & > div {
       display: inline-block;
       height: auto;
@@ -50,29 +79,38 @@
       position: absolute;
       width: 25%;
 
-      &:nth-of-type(2) {
-        height: 100%;
-        left: 25%;
-      }
 
-      &:nth-of-type(3) {
-        height: 50%;
-        left: 50%;
-        width: 50%;
-      }
 
-      &:nth-of-type(4) {
-        top: 50%;
-      }
+      @media (min-width: 768px) {
+        &:nth-of-type(2) {
+          height: 100%;
+          left: 25%;
+        }
 
-      &:nth-of-type(5) {
-        left: 50%;
-        top: 50%;
-      }
+        &:nth-of-type(3) {
+          height: 50%;
+          left: 50%;
+          width: 50%;
+        }
 
-      &:nth-of-type(6) {
-        left: 75%;
-        top: 50%;
+        &:nth-of-type(4) {
+          top: 50%;
+        }
+
+        &:nth-of-type(5) {
+          left: 50%;
+          top: 50%;
+        }
+
+        &:nth-of-type(6) {
+          left: 75%;
+          top: 50%;
+        }
+      }
+      @media (max-width: 767px) {
+        height: 100vh;
+        position: relative;
+        width: 100vw;
       }
 
       img {
@@ -144,4 +182,14 @@
 .explore-work {
   max-width: 100%;
   padding-bottom: 3em;
+
+  @media (max-width: 767px) {
+    padding-top: 3em;
+
+    div {
+      left: auto;
+      position: relative;
+      right: 0;
+    }
+  }
 }

@@ -13,6 +13,13 @@
     &::after {
       content: none;
     }
+
+    @media (max-width: 768px) {
+      font-size: $headings-font-size-md;
+    }
+    @media (max-width: 576px) {
+      font-size: $headings-font-size-sm;
+    }
   }
 
   .oliver-divider {

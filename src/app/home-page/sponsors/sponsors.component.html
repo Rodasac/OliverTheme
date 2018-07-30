@@ -1,11 +1,11 @@
 <div class="container-fluid sponsor-section">
-  <div class="row sponsors justify-content-md-center mt-5 pb-5">
-    <div *ngFor="let item of sponsorRows[0].row; let i = index" class=" col-3 col-md-1 align-self-center {{ i === 0 ? '' : 'offset-1' }}">
+  <div class="row sponsors justify-content-center mt-5 pb-5">
+    <div *ngFor="let item of sponsorRows[0].row; let i = index" class=" col-3 col-md-1 align-self-center {{ i === 0 ? '' : 'offset-md-1' }}">
       <img class="img-fluid" src="{{ item.image }}" alt="">
     </div>
   </div>
-  <div class="row sponsors justify-content-md-center mt-5">
-    <div *ngFor="let item of sponsorRows[1].row; let i = index" class="col-3 col-md-1 align-self-center {{ i === 0 ? '' : 'offset-1' }}">
+  <div class="row sponsors justify-content-center mt-5">
+    <div *ngFor="let item of sponsorRows[1].row; let i = index" class="col-3 col-md-1 align-self-center {{ i === 0 ? '' : 'offset-md-1' }}">
       <img class="img-fluid" src="{{ item.image }}" alt="">
     </div>
   </div>

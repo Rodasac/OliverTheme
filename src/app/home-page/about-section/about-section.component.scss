@@ -36,6 +36,14 @@
       top: 17vh;
       width: 3.5em;
       z-index: 2;
+
+      @media (max-width: 768px) {
+        left: 0;
+      }
+      @media (max-width: 576px) {
+        top: 10vh;
+      }
+
     }
 
     .img-overlay {
@@ -49,6 +57,12 @@
       img {
         width: 100%;
       }
+
+      @media (max-width: 768px) {
+        left: 10%;
+        max-width: 80%;
+        right: auto;
+      }
     }
 
     .square-pattern {
@@ -60,6 +74,14 @@
       top: 55vh;
       width: 10em;
       z-index: 2;
+
+      @media (max-width: 768px) {
+        left: auto;
+        right: 0;
+      }
+      @media (max-width: 576px) {
+        top: 60vh;
+      }
     }
   }
 
@@ -80,6 +102,13 @@
     .h1-section {
       position: relative;
       top: 2em;
+
+      @media (max-width: 768px) {
+        font-size: $headings-font-size-md;
+      }
+      @media (max-width: 576px) {
+        font-size: $headings-font-size-md;
+      }
     }
 
     .blockquote {
@@ -91,6 +120,13 @@
       max-width: 40vw;
       padding-top: 7em;
       text-align: center;
+
+      @media (max-width: 768px) {
+        max-width: 60vw;
+      }
+      @media (max-width: 576px) {
+        max-width: 80vw;
+      }
 
       p {
         font-size: .8em;
