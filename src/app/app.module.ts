@@ -17,6 +17,7 @@ import { AboutSectionComponent } from './home-page/about-section/about-section.c
 import { WorkSectionComponent } from './home-page/work-section/work-section.component';
 import { CountersComponent } from './home-page/counters/counters.component';
 import { TestimonialsComponent } from './home-page/testimonials/testimonials.component';
+import { PricingComponent } from './home-page/pricing/pricing.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TestimonialsComponent } from './home-page/testimonials/testimonials.com
     AboutSectionComponent,
     WorkSectionComponent,
     CountersComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,
