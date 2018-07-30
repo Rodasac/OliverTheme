@@ -21,7 +21,7 @@ export class SponsorsComponent implements OnInit {
         { image: '../../../assets/img/brand_logo_01.png' },
         { image: '../../../assets/img/brand_logo_02.png' },
         { image: '../../../assets/img/brand_logo_03.png' },
-        { image: '../../../assets/img/brand_logo_04.png' },
+        { image: '../../../assets/img/brand_logo_04.png' }
       ]
     },
     {
@@ -29,7 +29,7 @@ export class SponsorsComponent implements OnInit {
         { image: '../../../assets/img/brand_logo_05.png' },
         { image: '../../../assets/img/brand_logo_06.png' },
         { image: '../../../assets/img/brand_logo_07.png' },
-        { image: '../../../assets/img/brand_logo_08.png' },
+        { image: '../../../assets/img/brand_logo_08.png' }
       ]
     }
   ];

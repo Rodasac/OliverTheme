@@ -29,12 +29,14 @@
             "styles": [
               "src/assets/custom_bootstrap/custom.scss",
               "src/assets/owl.carousel-theme/theme.scss",
+              "node_modules/mapbox-gl/dist/mapbox-gl.css",
               "src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
-              "node_modules/owl.carousel/dist/owl.carousel.js"
+              "node_modules/owl.carousel/dist/owl.carousel.js",
+              "node_modules/mapbox-gl/dist/mapbox-gl-dev.js"
             ]
           },
           "configurations": {
