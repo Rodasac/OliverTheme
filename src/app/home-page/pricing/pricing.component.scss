@@ -44,16 +44,15 @@
   padding-left: 0;
   padding-right: 0;
   position: relative;
+  @media (max-width: 1024px) {
+    height: auto;
+    max-height: unset;
+  }
 
   & > * {
     overflow: hidden;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  @media (max-width: 767px) {
-    height: auto;
-    max-height: unset;
   }
 
   & > div {

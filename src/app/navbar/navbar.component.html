@@ -5,7 +5,7 @@
     </svg>
   </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button #toggler class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -13,23 +13,23 @@
     <ul class="navbar-nav mt-lg-4 ml-auto mr-5">
       <li class="nav-item active">
         <span></span>
-        <a class="nav-link" routerLink="/">Home.</a>
+        <a (click)="unToggle($event)" class="nav-link" routerLink="/">Home.</a>
       </li>
       <li class="nav-item">
         <span></span>
-        <a class="nav-link disabled" routerLink="/">About Me.</a>
+        <a (click)="unToggle($event)" class="nav-link disabled" routerLink="/">About Me.</a>
       </li>
       <li class="nav-item">
         <span></span>
-        <a routerLink="/" class="nav-link disabled">Works.</a>
+        <a (click)="unToggle($event)" routerLink="/" class="nav-link disabled">Works.</a>
       </li>
       <li class="nav-item">
         <span></span>
-        <a routerLink="/" class="nav-link disabled">Journal.</a>
+        <a (click)="unToggle($event)" routerLink="/" class="nav-link disabled">Journal.</a>
       </li>
       <li class="nav-item">
         <span></span>
-        <a class="nav-link" routerLink="/contact">Contact.</a>
+        <a (click)="unToggle($event)" class="nav-link" routerLink="/contact">Contact.</a>
       </li>
     </ul>
   </div>

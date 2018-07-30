@@ -3,7 +3,6 @@
 header {
   max-width: 100vw;
   min-height: 100vh;
-  overflow: hidden;
   padding-top: 30vh;
 
   &::after {
@@ -53,16 +52,40 @@ header {
       position: absolute;
       top: 0;
       width: 100%;
+      @media (max-width: 768px) {
+        left: 30%;
+      }
+    }
+
+    .oliver-btn {
+      @media (max-width: 768px) {
+        margin-top: 40% !important;
+      }
+      @media (max-width: 576px) {
+        margin-top: 80% !important;
+      }
     }
 
     .oliver-btn > span {
       height: 4vh;
       transform: translateX(-40%);
+      @media (max-width: 768px) {
+        transform: translateX(-50%);
+      }
+      @media (max-width: 576px) {
+        transform: translateX(-100%);
+      }
     }
 
     a {
       right: -40%;
       top: 30%;
+      @media (max-width: 768px) {
+        right: -50%;
+      }
+      @media (max-width: 576px) {
+        right: -60%;
+      }
     }
   }
 }

@@ -38,9 +38,10 @@
       z-index: 2;
 
       @media (max-width: 768px) {
-        left: 0;
+        left: 10%;
       }
       @media (max-width: 576px) {
+        left: 0;
         top: 10vh;
       }
 
@@ -59,9 +60,13 @@
       }
 
       @media (max-width: 768px) {
-        left: 10%;
+        left: 20%;
         max-width: 80%;
         right: auto;
+      }
+      @media (max-width: 576px) {
+        left: 10%;
+        top: 10vh;
       }
     }
 
