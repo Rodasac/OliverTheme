@@ -1,0 +1,43 @@
+@import '~src/assets/custom_bootstrap/variables';
+
+.sponsor-section {
+  margin-top: 20vh;
+  padding-bottom: 5em;
+}
+
+.newsletter-section {
+  padding-top: 10em;
+
+  h1 {
+    font-size: 3em;
+    font-weight: 500;
+  }
+
+  .form-control {
+    background: none;
+    border-radius: 0;
+    height: auto;
+    line-height: 3;
+  }
+
+  .oliver-divider {
+    top: 3.5em;
+    transform: rotatez(-90deg);
+    width: 100px;
+  }
+
+  .input-group {
+    padding-bottom: 6em;
+    position: relative;
+    top: 6em;
+  }
+
+  button {
+    background: none;
+    border: 1px solid $body-color;
+    border-radius: 0;
+    color: $body-color;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
